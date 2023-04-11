@@ -6,7 +6,7 @@ int main()
 	const int volume_destruivel = 10;
 	int volume;
 		
-	printf("Volume do local a ser destruido: ");
+	printf("\nVolume do local a ser destruido: ");
 	scanf("%d", &volume);
 	
 	printf("\nSao necessarias %.2f Bombas de neutrinos", (float) volume / volume_destruivel);

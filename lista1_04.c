@@ -7,7 +7,7 @@ int main()
 	int circunferencia, raio;
 	float volume;
 	
-	printf("Qual a circunferencia do planeta? ");
+	printf("\nQual a circunferencia do planeta? ");
 	scanf("%d", &circunferencia);
 	
 	raio = circunferencia / 2;
