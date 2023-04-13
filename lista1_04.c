@@ -1,18 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
  
 int main()
 {
 	const float pi = 3.14;
-	int circunferencia, raio;
-	float volume;
+	float volume, raio;
 	
-	printf("\nQual a circunferencia do planeta? ");
-	scanf("%d", &circunferencia);
+	printf("\nQual o raio do planeta? ");
+	scanf("%f", &raio);
 	
-	raio = circunferencia / 2;
-	
-	volume = 4 * pi * raio / 3;
+	volume = 4 * pi * (pow(raio, 3)) / 3;
 	
 	printf("\nO volume do planeta e: %.2f", volume);
 	
