@@ -13,6 +13,7 @@ int main(void)
 	printf("\nQuantos filhos menores de 14 anos? ");
 	scanf("%d", &filhos);
 
+	//mudar para Do{} While()
     printf("\nO seu conjuge trabalha? (1 para sim, 0 para nao): ");
     scanf("%d", &conjuge);
 
