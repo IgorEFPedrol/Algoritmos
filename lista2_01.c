@@ -7,7 +7,7 @@ int main(void)
 	float salario_final, porcentagem;
 
 	do
-    {
+        {
         printf("\nQual o salario base: ");
         scanf("%d", &salario_base);
 	}
