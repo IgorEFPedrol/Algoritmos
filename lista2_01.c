@@ -29,14 +29,15 @@ int main(void)
    	if (conjuge == 0)
 	{
 		porcentagem = filhos * 0.10;
-		salario_final = (float)salario_base + salario_base * (0.0 + porcentagem);
+		salario_final = (float)salario_base + salario_base * (porcentagem);
     		printf("\nO salario final e: R$%.2f", salario_final);
 	}
 	else
 	{
 		porcentagem = filhos * 0.05;
-		salario_final = salario_base + salario_base * (0.0 + porcentagem);
+		salario_final = salario_base + salario_base * (porcentagem);
 		printf("\nO salario final e: R$%.2f", salario_final);
 	}
 }
+
 
