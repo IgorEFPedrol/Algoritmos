@@ -6,8 +6,13 @@ int main(void)
 	int salario_base, filhos, conjuge;
 	float salario_final, porcentagem;
 
-	printf("Qual o salario base: ");
-	scanf("%d", &salario_base);
+	do
+        {
+        printf("\nQual o salario base: ");
+        scanf("%d", &salario_base);
+	}
+	while(salario_base <= 0);
+
 
 	printf("\nQuantos filhos menores de 14 anos? ");
 	scanf("%d", &filhos);
@@ -18,19 +23,21 @@ int main(void)
    	    scanf("%d", &conjuge);
 	}
 	while (conjuge != 1 && conjuge != 0);
-    
+
    	//Criando uma funcao para verificar quantos filhos o usuario possui e qual o salario final,
     	// dependendo do numero de filhos e se o conjuge trabalha
-   	if (conjuge == 1)
+   	if (conjuge == 0)
 	{
 		porcentagem = filhos * 0.10;
-		salario_final = (float)salario_base + salario_base * (0.0 + porcentagem);
+		salario_final = (float)salario_base + salario_base * (porcentagem);
     		printf("\nO salario final e: R$%.2f", salario_final);
 	}
 	else
 	{
 		porcentagem = filhos * 0.05;
-		salario_final = salario_base + salario_base * (0.0 + porcentagem);
+		salario_final = salario_base + salario_base * (porcentagem);
 		printf("\nO salario final e: R$%.2f", salario_final);
 	}
 }
+
+
