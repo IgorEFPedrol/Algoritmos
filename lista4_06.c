@@ -11,7 +11,6 @@ int main (void)
 
     int salarios[num_funcionarios], filhos[num_funcionarios];
 
-
     for (int i = 0; i < num_funcionarios; i++)
     {
         printf("\nSalario: ");
