@@ -8,11 +8,12 @@ int main(void)
     int jogadores, equipes;
     unsigned long long int combinacoes;
 
-    printf("\nJogadores no total: ");
-    scanf("%d", &jogadores);
-
-    printf("\nParticipantes por equipe: ");
-    scanf("%d", &equipes);
+    do
+    {
+    printf("\nInsira os jogadores no total e quantos Participantes por equipe: \n");
+    scanf("%d %d", &jogadores, &equipes);
+    }
+    while(jogadores <= 0 || equipes <= 0);
 
     combinacoes = fatorial(jogadores) / ((fatorial(equipes)) * (fatorial(jogadores - equipes)));
 
@@ -21,10 +22,10 @@ int main(void)
 
 long fatorial(int numero)
 {
-    long fact = 1;
+    long fat = 1;
     for (int i = 1; i <= numero; i++)
     {
-        fact *= i;
+        fat *= i;
     }
-    return fact;
+    return fat;
 }
