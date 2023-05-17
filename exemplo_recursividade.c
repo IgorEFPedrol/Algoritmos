@@ -4,7 +4,7 @@
 
 void imprimir(int n)
 {
-    if(n == 0)
+    if (n == 0)
         printf("%d ", n);
     else
     {
