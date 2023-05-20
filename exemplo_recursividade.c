@@ -4,7 +4,7 @@
 
 void imprimir(int n)
 {
-    if(n == 0)
+    if (n == 0)
         printf("%d ", n);
     else
     {
@@ -20,8 +20,7 @@ int main (void)
     {
         printf("\nDigite um numero inteiro maior que 0: ");
         scanf("%d", &numero);
-    }
-    while(numero < 0);
+    } while (numero < 0);
     printf("\n");
     imprimir(numero);
     printf("\n");
