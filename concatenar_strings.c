@@ -6,7 +6,7 @@ int main (void)
 {
     char prim_nome[50] = {"Ola "};
 
-    //A funcao strcat() concatena o segundo parametro na string do primeiro param
+    //A funcao strcat() concatena o segundo parametro na string do primeiro parame
     strcat(prim_nome, "Igor ");
 
     strcat(prim_nome, "Pedrol");
