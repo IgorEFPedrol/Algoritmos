@@ -13,5 +13,5 @@ int main() {
      
     printf("%d:%d:%d\n", h, m, n);
     
-    return 0; 
+    return 0;
 }
