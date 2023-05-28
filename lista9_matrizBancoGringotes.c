@@ -7,7 +7,7 @@ int main (void)
     printf("Quantos cofres existem no banco? ");
     scanf("%d", &tamanho);
 
-    float cofre[tamanho], maior_valor = 0, menor_valor = 99999, total = 0;
+    float cofre[tamanho], maior_valor = 0, menor_valor = 9999999999, total = 0;
 
     for (i = 0; i < tamanho; i++)
     {
@@ -24,8 +24,9 @@ int main (void)
             menor_valor = cofre[i];
             menor = i;
         }
+
         total += cofre[i];
     }
 
-    printf("\nO total de galeoes guardados nos cofres eh %.2f\n\nO maior Valor esta no cofre: %i\n\nO menor valor esta no cofre: %i", total, maior, menor);
+    printf("\nO total de galeoes guardados nos cofres eh R$%.2f\n\nO maior Valor esta no cofre: %i\n\nO menor valor esta no cofre: %i", total, maior, menor);
 }
