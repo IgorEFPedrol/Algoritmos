@@ -20,7 +20,7 @@ int main() {
     printf("%d nota(s) de R$ 10,00\n", num / 10);
     num %= 10;
 
-    printf("%d nota(s) de R$ 5,00\n", num / 5);
+    printf("%d nota(s) de R$ 5,00\n", num / 5); 
     num %= 5;
 
     printf("%d nota(s) de R$ 2,00\n", num / 2);
