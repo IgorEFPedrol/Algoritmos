@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(voi)
+int main(void)
 {
     int nFigurinhas, nCarimbadas, nCompradas, i, aux, carimbadas[101] = {0};
 
