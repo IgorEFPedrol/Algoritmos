@@ -3,7 +3,7 @@
 int main(void)
 {
     int nFigurinhas, nCarimbadas, nCompradas, i, aux, carimbadas[101] = {0};
-   
+    
     scanf(" %d %d %d", &nFigurinhas, &nCarimbadas, &nCompradas);
 
     for(i = 0; i < nCarimbadas; i++)
