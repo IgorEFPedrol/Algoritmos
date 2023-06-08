@@ -12,5 +12,5 @@ int main() {
     dias %= 30;
     
     printf("%d dia(s)\n", dias);
-    return 0; 
+    return 0;
 } 
