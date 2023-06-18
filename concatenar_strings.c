@@ -10,6 +10,6 @@ int main (void)
     strcat(prim_nome, "Igor ");
 
     strcat(prim_nome, "Pedrol");
-
+ 
     printf("%s", prim_nome);
 }
