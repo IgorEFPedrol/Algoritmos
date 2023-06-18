@@ -11,5 +11,5 @@ int main (void)
 
     strcat(prim_nome, "Pedrol");
  
-    printf("%s", prim_nome); 
+    printf("%s", prim_nome);
 }
