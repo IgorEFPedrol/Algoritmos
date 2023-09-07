@@ -7,14 +7,14 @@ float calculaBC(int b, float ac);
 
 int main(void)
 {
-    int x, b, c, cb;
+    int a, b, c, cb;
     float ac, bc;
 
-    printf("\nInforme x e b: \n");
-    scanf("%d %d", &x, &b);
+    printf("\nInforme a e b: \n");
+    scanf("%d %d", &a, &b);
 
     c = calculaC(b);
-    ac = calculaAC(x, b, c);
+    ac = calculaAC(a, b, c);
     bc = calculaBC(b, ac);
 
     printf("\nA distancia AC = %.2f e BC = %.2f", ac, bc);
@@ -25,15 +25,13 @@ int calculaC(int b)
     return 90 - b;
 }
 
-float calculaAC(int x, int b, int c)
+float calculaAC(int a, int b, int c)
 {
     float cb, cc;
     cb = (b * 3.1415) / 180;
     cc = (c * 3.1415) / 180;
 
-    printf("%f", sin(cb));
-
-    return sin(cb) * x / (float)sin(cc);
+    return sin(cb) * a / (float)sin(cc);
 }
 
 float calculaBC(int b, float ac)
